@@ -35,3 +35,9 @@ Features include:
 
 ## Tools
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+
+Best Results after Hyperparameter Tuning:
+Random Forest: 90% accuracy
+Logistic Regression: Best ROC-AUC score (0.74)
+Trained and compared 5 models: Logistic Regression, Decision Tree, Random Forest, KNN, XGBoost
+Handled severe class imbalance (95:5 ratio) using SMOTE oversampling on 5,109 patient records
