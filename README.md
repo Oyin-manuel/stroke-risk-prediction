@@ -35,9 +35,17 @@ Features include:
 
 ## Tools
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+## Model Results (After Hyperparameter Tuning)
 
-Best Results after Hyperparameter Tuning:
-Random Forest: 90% accuracy
-Logistic Regression: Best ROC-AUC score (0.74)
-Trained and compared 5 models: Logistic Regression, Decision Tree, Random Forest, KNN, XGBoost
-Handled severe class imbalance (95:5 ratio) using SMOTE oversampling on 5,109 patient records
+| Model | Accuracy | ROC-AUC |
+|---|---|---|
+| Random Forest | 90% | 0.56 |
+| XGBoost | 89% | 0.56 |
+| Decision Tree | 86% | 0.53 |
+| KNN | 79% | 0.56 |
+| Logistic Regression | 77% | 0.74 |
+
+**Best overall:** Random Forest (highest accuracy)
+**Best for detecting stroke cases:** Logistic Regression (highest ROC-AUC — critical for imbalanced medical data)
+
+Handled severe class imbalance (95:5 ratio) using SMOTE on 5,109 patient records.
